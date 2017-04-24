@@ -4,10 +4,12 @@
 
 using namespace	std;
 
-// ofstream est le type des var pour les flux
+// ofstream est le type des var pour les flux dans lequel on veut ecrire
 
 // si un fichier existe deja et que l'on veut ecrire dedans sans rien effacer
-// il faut ajouter app en deuxie;e parametre (= append = ajouter a la fin)
+// il faut ajouter app en deuxieme parametre (append = ajouter a la fin)
+// app se situe dans ios qui appartient lui meme a std
+// ios n'est ni une classe ni un namespace
 
 int				append_test()
 {

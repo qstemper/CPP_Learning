@@ -24,7 +24,7 @@ int					main()
 	cout << "Taille de tab : " << sizeTab << endl;
 	while (i < 10)
 	{
-		tab.push_back(42 + i); // ajoute une case au tableau contenant la valeur 42
+		tab.push_back(42 + i); // ajoute une case au tableau contenant la valeur 42 + i
 		cout << tab[i] << endl;
 		i++;
 	}
