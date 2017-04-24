@@ -10,6 +10,12 @@ using namespace	std;
 //			2 - mot par mot, avec les chevrons >>
 //			3 - char par char, avec la fonction get();
 
+// on peut retarder l'ouverture d'un flux grace a la fonction open(fileName)
+// 			usage : stream.open(fileName)
+
+// on peut fermer prematurememt un flux avec la fonction close()
+//			usage : stream.close()
+
 int				main()
 {
 	int			method(-1);
@@ -17,7 +23,7 @@ int				main()
 	char		a;
 	string		line;
 	string		word;
-	string		word2("\0");
+	string		word2("1");
 	string		fileName("Test/stream1");
 	ifstream	myStream(fileName);
 
@@ -34,16 +40,12 @@ int				main()
 	if (method == 1)
 	{
 		cout << "You choose the line by line reading method" << endl;
-		while (myStream)
+		while (getline(myStream, line))
 		{
-			getline(myStream, line);
 			// on teste si line est une chaine vide en la comparant avec la chaine vide
-			if (line.compare("\0") != 0) 
-			{
-				cout << "Line " << i << " : ";
-				cout << line << endl;
-				i++;
-			}
+			cout << "Line " << i << " : ";
+			cout << line << endl;
+			i++;
 		}
 	}
 	else if (method == 2)
