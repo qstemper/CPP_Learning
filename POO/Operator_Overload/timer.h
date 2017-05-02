@@ -14,11 +14,14 @@ class				Timer
 		int			getHours();
 		int			getMin();
 		int			getSec();
+		bool		isEqual(Timer const& b) const;
 
 	private :
 		int			t_h;
 		int			t_m;
 		int			t_s;
 };
+
+bool				operator==(Timer const& a, Timer const& b);
 
 #endif

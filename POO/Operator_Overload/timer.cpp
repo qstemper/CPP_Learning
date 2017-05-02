@@ -61,3 +61,15 @@ int			Timer::getSec()
 {
 	return (t_s);
 }
+
+bool		Timer::isEqual(Timer const& b) const
+{
+	if (t_h == b.t_h && t_m == b.t_m && t_s == b.t_s)
+		return (true);
+	return (false);
+}
+
+bool		operator==(Timer const& a, Timer const& b)
+{
+	return (a.isEqual(b));
+}
