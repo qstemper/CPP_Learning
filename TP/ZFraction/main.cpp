@@ -4,7 +4,7 @@ using namespace	std;
 
 int				main()
 {
-	ZFraction a(1, 5);
+	ZFraction a(36, 18);
 	ZFraction b(1, 5);
 	ZFraction c(2), d(6, 5);
 
@@ -18,5 +18,7 @@ int				main()
 		cout << "c is equal or sup to d" << endl;
 	else
 		cout << "c is inf to d" << endl;
+	a.zfIrr();
+	a.getFrac();
 	return (0);
 }

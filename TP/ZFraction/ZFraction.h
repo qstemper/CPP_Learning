@@ -14,6 +14,7 @@ class				ZFraction
 		ZFraction	zfSub(ZFraction zf);
 		ZFraction	zfMult(ZFraction zf);
 		ZFraction	zfDiv(ZFraction zf);
+		void		zfIrr();
 		bool		zfSup(ZFraction zf);
 		bool		zfInf(ZFraction zf);
 		bool		zfEqual(ZFraction zf);
@@ -29,8 +30,8 @@ ZFraction			operator+(ZFraction a, ZFraction b);
 ZFraction			operator-(ZFraction a, ZFraction b);
 ZFraction			operator*(ZFraction a, ZFraction b);
 ZFraction			operator/(ZFraction a, ZFraction b);
-bool				operator<(ZFraction a, ZFraction b);
 bool				operator>(ZFraction a, ZFraction b);
+bool				operator<(ZFraction a, ZFraction b);
 bool				operator==(ZFraction a, ZFraction b);
 bool				operator!=(ZFraction a, ZFraction b);
 bool				operator<=(ZFraction a, ZFraction b);
